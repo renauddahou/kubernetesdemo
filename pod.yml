@@ -5,8 +5,10 @@ metadata:
     labels:
     name: Serviceapp
 spec:
-    containers:
-        - name: Serviceapp
-          image: 12345678414751552455/mydocker2:latest
-          ports:
-              - containerPort: 5000
+  containers:
+  - name: flask-container
+    image: 12345678414751552455/mydocker2:latest
+    ports:
+    - containerPort: 5000
+      protocol: TCP
+  restartPolicy: Always
