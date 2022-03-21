@@ -3,7 +3,7 @@ kind: Service
 metadata:
     name: Serviceapp
     labels:
-    name: Serviceapp
+    	app: Serviceapp
 spec:
   containers:
   - name: flask-container
